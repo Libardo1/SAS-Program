@@ -1,0 +1,10 @@
+options pageno=1 ps=64 ls=80 nodate;
+data test;
+retain string "abc";
+do position = -1 to 4;
+result=char(string, position);
+output;
+end;
+run;
+proc print noobs data=test;
+run;

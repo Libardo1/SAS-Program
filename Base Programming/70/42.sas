@@ -1,0 +1,15 @@
+data WORK.ONE;
+     Text='Australia, US, Denmark';
+     Pos=find(Text,'us     ','i''t',1);
+  run;
+  proc print;run;
+  data WORK.ONE;
+     Text='Australia, US, Denmark';
+     Pos=find(Text,'US    ','t',5);
+  run;
+  proc print;run;
+  data WORK.ONE;
+     Text='Australia, US, Denmark';
+     Pos=find(Text,'US');
+  run;
+  proc print; run;
