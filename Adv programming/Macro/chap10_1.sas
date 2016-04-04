@@ -13,3 +13,5 @@ var location begin_date teacher;
 title1 "Schedule for &title";
 options nodate nonumber;
 run;
+
+%put crsid is "&crsid";
