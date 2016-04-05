@@ -2,5 +2,5 @@
 proc sql;
 select nvar from
 dictionary.tables
-where libname = &lib;
+where libname = "&lib";
 quit;
