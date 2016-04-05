@@ -30,7 +30,7 @@ proc sql;
 		budget
 	from
 	 work.one
-	 right join
+	 left join
 	 work.two
 	on one.year = two.year
 	;

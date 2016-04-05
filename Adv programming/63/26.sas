@@ -29,7 +29,7 @@ from WORK.VISIT2
 group by 1    
 order by 1,2 
 ;      
-
+/* D */
 proc sql;
 select 
    Id, 
