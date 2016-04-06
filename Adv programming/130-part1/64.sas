@@ -28,6 +28,7 @@ select coalesce(one.id, two.id) as id, name, salary
 from one full join two
 on one.id = two.id; 
 quit;
+title "a";
 proc print;
 run;
 
@@ -39,6 +40,7 @@ select one.id, name, salary
 from one inner join two
 on one.id = two.id;
 quit;
+title "b";
 proc print;
 run;
 
@@ -49,6 +51,7 @@ select coalesce(one.id, two.id) as id, name, salary
 from one, two
 where one.id = two.id; 
 quit;
+title "c";
 proc print;
 run;
 
@@ -59,6 +62,7 @@ select one.id, name, salary
 from one full join two
 on one.id = two.id; 
 quit;
+title "d";
 proc print;
 run;
 
@@ -69,6 +73,7 @@ select one.id, name, salary
 from one left join two
 on one.id = two.id; 
 quit;
+title "left join";
 proc print;
 run;
 
@@ -79,6 +84,7 @@ select one.id, name, salary
 from one right join two
 on one.id = two.id; 
 quit;
+title "right join";
 proc print;
 run;
 
@@ -88,6 +94,7 @@ select * from one
 outer union corr
 select * from two; 
 quit;
+title "outer union corr";
 proc print;
 run;
 
@@ -98,5 +105,6 @@ select * from one
 outer union
 select * from two; 
 quit;
+title "outer union";
 proc print;
 run;

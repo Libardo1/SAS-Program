@@ -18,7 +18,7 @@ run;
 proc sql;
 select 
    Id, 
-   sum(Expense) label='COST'    
+   sum(Expense)  label = 'cost'  
 from WORK.VISIT1
 group by 1    
 union all
